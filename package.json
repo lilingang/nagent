@@ -1,0 +1,10 @@
+{
+  "name": "nagent",
+  "version": "0.0.1",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "http-proxy": "^1.11.1",
+    "socket.io": "^1.3.6",
+    "socket.io-client": "^1.3.6"
+  }
+}
