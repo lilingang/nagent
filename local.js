@@ -14,7 +14,7 @@ var proxy = new httpProxy.createProxyServer();
 http.createServer(function (req, res) {
     var realyhost = req.headers.host;
     req.headers.host = 'nagent.heroku.com';
-    req.setAttribute("realyhost",realyhost)
+    //req.setParameter("realyhost",realyhost);
     if(realyhost != 'nagent.heroku.com'){
         setTimeout(function () {
             proxy.web(req, res, {

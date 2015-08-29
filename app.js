@@ -15,7 +15,7 @@ http.createServer(function (request, response) {
     console.log('request successfully proxied to: ' + request.url);
     var addresses =
         {
-            host: request.getAttribute("realyhost"),
+            host: 'www.youku.com',//request.getAttribute("realyhost"),
             port: request.headers.port
         };
     setTimeout(function () {
