@@ -1,6 +1,9 @@
 {
   "name": "nagent",
   "version": "0.0.1",
+  "scripts": {
+        "start": "node ./app.js"
+    },
   "dependencies": {
     "colors": "^1.1.2",
     "http-proxy": "^1.11.1",
