@@ -15,7 +15,7 @@ http.createServer(function (request, response) {
     console.log('request successfully proxied to: ' + request.url);
     var addresses =
         {
-            host: request.headers.host,
+            host: request.getAttribute("realyhost"),
             port: request.headers.port
         };
     setTimeout(function () {
